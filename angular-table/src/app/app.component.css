@@ -1,0 +1,28 @@
+cdk-table {
+    flex: 1 1 auto;
+    overflow: auto;
+    max-height: 500px;
+}
+
+cdk-header-row, cdk-row {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    height: 32px;
+    padding: 0 8px;
+}
+
+cdk-cell, cdk-header-cell {
+    flex: 1;
+}
+
+cdk-header-cell {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+cdk-cell {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.87);
+}

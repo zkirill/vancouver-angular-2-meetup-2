@@ -1,0 +1,18 @@
+<cdk-table #table [dataSource]="dataSource">
+  <!-- ID Column -->
+  <ng-container cdkColumnDef="id">
+    <cdk-header-cell *cdkHeaderCellDef> ID </cdk-header-cell>
+    <cdk-cell *cdkCellDef="let row"> {{row.id}} </cdk-cell>
+  </ng-container>
+  <!-- end ID Column -->
+  <!-- Name Column -->
+  <ng-container cdkColumnDef="name">
+    <cdk-header-cell *cdkHeaderCellDef> Name </cdk-header-cell>
+    <cdk-cell *cdkCellDef="let row"> {{row.name}} </cdk-cell>
+  </ng-container>
+  <!-- end Name Column -->
+  <!-- Row -->
+  <cdk-header-row *cdkHeaderRowDef="['id', 'name']"></cdk-header-row>
+  <cdk-row *cdkRowDef="let row; columns: ['id', 'name'];"></cdk-row>
+  <!-- end Row -->
+</cdk-table>
